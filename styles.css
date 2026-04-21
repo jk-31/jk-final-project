@@ -8,13 +8,27 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 main {
   padding: 1rem;
 }
-
-.images {
-  display: flex;
-  justify-content: center;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.images img {
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  width: 100%;
+}
+.flannel {
+  display: flex;
+  justify-content: center;
+  box-shadow: 6px 10px 10px black;
+}
+
+.flannel img {
   width: 100%;
   max-width: 800px;
   height: auto;
@@ -95,4 +109,25 @@ main {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .column {
+    display: inline-block;
+    width: 48%; 
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .column {
+    width: 31%;
+  }
 }
