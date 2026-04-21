@@ -1,13 +1,21 @@
 body {
-margin: 0;
-background-color:rgb(133, 102, 148);
-font-size: x-large;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-color: rgb(133, 102, 148);
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
   padding: 1rem;
 }
+
+
+.container, .hero, .wrapper, .topnav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -16,36 +24,34 @@ img {
   margin-right: auto;
 }
 
-.image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;     
-  width: 100%;
-}
-.flannel {
-  display: flex;
-  justify-content: center;
-  box-shadow: 6px 10px 10px black;
-}
 
-.flannel img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-}
 
 .topnav {
-  width: 100%;
-  margin-bottom: 20px;
   background-color: white;
   padding: 15px;
   border: 2px solid black;
   box-shadow: 10px 10px 6px black;
+  position: relative;
+  z-index: 1000;
+  max-width: 900px;
+  margin: 20px auto;
 }
 
-.topnav ul {
+.nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  display: flex;
   gap: 15px;
   list-style: none;
   padding: 0;
@@ -54,7 +60,6 @@ img {
 
 .topnav a {
   display: inline-block;
-  transform-origin: center;
   padding: 10px 20px;
   text-decoration: none;
   color: black;
@@ -70,11 +75,9 @@ img {
   transform: translateY(5px);
 }
 
-.wrapper {
-  max-width: 800px;
-  margin: 40px auto;
+#menu-toggle, .hamburger {
+  display: none;
 }
-
 
 .hero {
   background-color: white;
@@ -87,47 +90,48 @@ img {
   box-shadow: 10px 10px 6px black;
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: 2rem;
-}
 
 .hero p {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 100%;
   opacity: 0.7;
 }
+
 .container {
-  width: 100%;
   padding: 30px;
   background-color: white;
   border: 2px solid black;
   box-shadow: 10px 10px 6px black;
+  max-width: 800px;
 }
 
-
-
-* {
-  box-sizing: border-box;
-}
-
-
-@media screen and (min-width: 600px) {
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
   }
-  
-  .column {
-    display: inline-block;
-    width: 48%; 
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    right: -2px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 6px 6px 6px black;
+    padding: 10px;
   }
-}
 
+  #menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
 
-@media screen and (min-width: 1024px) {
-  .column {
-    width: 31%;
+  .container, .hero {
+    width: 90%;
+    padding: 20px;
   }
 }
