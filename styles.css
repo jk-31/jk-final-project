@@ -21,121 +21,6 @@ h2 {
   padding: 1rem;
 }
 
-
-.brand {
-  margin-top: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-}
-
-
-.nav-logo {
-  text-shadow: 1px 2px 2px;
-}
-
-.container, .hero, .wrapper, .topnav {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.profile {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-  border: 2px solid black;
-  box-shadow: 0px 10px 6px black;
-}
-
-.topnav {
-  background-color: white;
-  padding: 15px;
-  border: 2px solid black;
-  box-shadow: 0px 10px 6px black;
-  position: relative;
-  z-index: 1000;
-  max-width: 900px;
-  margin: 20px auto;
-}
-
-.nav-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;  
-}
-
-.nav-logo {
-font-weight: bold;
-font-size: 1.5rem;
-text-transform: uppercase;
-}
-
-.nav-menu {
-display: flex;
-gap: 15px;
-list-style: none;
-padding: 0;
-margin: 0;
-}
-
-.topnav a {
-
-display: inline-block;
-padding: 10px 20px;
-text-decoration: none;
-color: black;
-border: 0.5rem solid transparent;
-border-radius: 2rem;
-transition: all 0.1s ease;
-
-}
-
-.topnav a:hover {
-
-background-color: black;
-color: white;
-border-color: black;
-transform: translateY(5px);
-
-}
-
-#menu-toggle, .hamburger {
-
-  display: none;
-
-}
-
-.hero {
-
-background-color: white;
-color: black;
-text-align: center;
-padding: 40px 20px;
-margin: 30px auto;
-max-width: 900px;
-border: 2px solid black;
-box-shadow: 0px 10px 6px black;
-}
-
-.hero img {
-
-display: block;
-margin-left: auto;
-margin-right: auto;
-max-width: 400px;
-height: auto;
-margin-top: 20px;
-
-
-}
 * {
   box-sizing: border-box;
 }
@@ -152,19 +37,24 @@ main {
 }
 
 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0.5rem;
+  font-size: 90%;
 }
 
 
 h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
+  font-size: 60%;
   font-weight: 100;
   padding: 1rem;
 }
 
-
 h3 {
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 70%;
+  font-weight: 100;
 }
 
 .brand {
@@ -175,10 +65,6 @@ h3 {
 
 .wrapper {
   padding: 0 10px;
-}
-
-.nav-logo {
-  text-shadow: 1px 2px 2px;
 }
 
 .container, .hero, .wrapper, .topnav {
@@ -292,45 +178,6 @@ margin-top: 20px;
   opacity: 0.7;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: 0px 10px 6px black;
-  max-width: 800px;
-}
-
-.philo {
-  text-align: left;
-  padding-bottom: 1rem;
-}
-
-.philo-text {
-  text-align: left;
-  font-style: italic;
-  padding-bottom: 0.5rem;
-}
-
-
-.who {
-  display: flex;
-  justify-content: left;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.who-me {
-  text-align: left;
-  font-style: italic;
-  padding-bottom: 2rem;
-  opacity: 0.7
-}
-
-
-
-
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -347,15 +194,6 @@ margin-top: 20px;
   top: 0;
 }
 
-.vid-descript {
-  text-align: center; 
-  width: 100%; 
-  max-width: 560px; 
-  line-height: 1.6;
-  color: #333;
-  margin: 0 auto; 
-  font-size: 100%; 
-}
 
 .prev-AI {
 background-color: white;
@@ -380,7 +218,7 @@ box-shadow: 0px 10px 6px black;
 .ai-flex-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -417,7 +255,6 @@ box-shadow: 0px 10px 6px black;
   padding-bottom: 0.5rem;
 }
 
-
 .who {
   display: flex;
   justify-content: left;
@@ -432,7 +269,6 @@ box-shadow: 0px 10px 6px black;
   opacity: 0.7
 }
 
-
 .prev-work {
   display: flex;
   flex-direction: column;
@@ -441,11 +277,10 @@ box-shadow: 0px 10px 6px black;
   color: black;
   text-align: center;
   padding: 40px 20px;
-  margin: 30px auto;
+  margin: 20px auto;
   max-width: 900px;
   border: 2px solid black;
   box-shadow: 0px 10px 6px black;
-  font-size: 70%;
 }
 
 .prev-work-vid {
@@ -458,8 +293,7 @@ box-shadow: 0px 10px 6px black;
   max-width: 560px; 
   line-height: 1.6;
   color: #333;
-  margin: 0 auto; 
-  font-size: 100%; 
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -484,18 +318,16 @@ box-shadow: 0px 10px 6px black;
   padding: 10px;
 }
 
-  #menu-toggle:checked ~ .nav-menu {
+#menu-toggle:checked ~ .nav-menu {
 
   display: flex;
 
-  }
+}
 
-  .container, .hero {
-
+.container, .hero {
   width: 100%;
   padding: 20px;
-
-  }
+}
 }
 
 .site-footer {
@@ -509,13 +341,11 @@ box-shadow: 0px 10px 6px black;
   font-size: 70%;
   max-width: 900px; 
   margin: 30px auto;
-
 }
 
 
 
 .footer-grid {
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr));
   gap: 1rem;
